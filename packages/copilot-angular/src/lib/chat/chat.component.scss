@@ -93,7 +93,7 @@
 }
 
 .ngm-copilot-chat__answering {
-  background-color: var(--ngm-copilot-bg-color, white);
+  background-color: var(--ngm-copilot-bg-color, theme('colors.white'));
 }
 
 .icon-md {

@@ -4,7 +4,7 @@
 }
 
 .mat-mdc-input-element {
-  background-color: var(--mdc-dialog-container-color, white);
+  background-color: var(--mdc-dialog-container-color, theme('colors.white'));
 }
 
 .mat-mdc-progress-bar {
