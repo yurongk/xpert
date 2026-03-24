@@ -1,31 +1,29 @@
 English | [中文](./README_zh.md)
 
-[uri_license]: https://www.gnu.org/licenses/agpl-3.0.html
-[uri_license_image]: https://img.shields.io/badge/License-AGPL%20v3-blue.svg
-
 <p align="center">
   <a href="https://xpertai.cn/en/">
-    <img src="docs/images/logo.png" alt="Xpert AI" style="width: 240px; height: auto;">
+    <img src="docs/images/logo.png" alt="Xpert AI" width="240">
   </a>
 </p>
 
 <p align="center">
-  <a href="https://app.mtda.cloud/">XpertAI Cloud</a> ·
-  <a href="https://xpertai.cn/en/docs/getting-started/community/">Self-hosting</a> ·
-  <a href="https://xpertai.cn/en/docs/">Documentation</a> ·
-  <a href="https://xpertai.cn/en/#connect">Enterprise inquiry</a>
+  <strong>Open-Source AI Platform for Enterprise Data Analysis, Indicator Management & Agent Orchestration</strong>
 </p>
 
 <p align="center">
-  <em>Open-Source AI Platform for Enterprise Data Analysis, Indicator Management and Agents Orchestration</em>
+  <a href="https://app.mtda.cloud/">XpertAI Cloud</a> •
+  <a href="https://xpertai.cn/en/docs/getting-started/community/">Self-hosting</a> •
+  <a href="https://xpertai.cn/en/docs/">Documentation</a> •
+  <a href="https://xpertai.cn/en/#connect">Enterprise Inquiry</a>
 </p>
+
 <p align="center">
   <a href="https://github.com/xpert-ai/xpert/" target="_blank">
     <img src="https://visitor-badge.laobi.icu/badge?page_id=meta-d.ocap" alt="Visitors">
   </a>
   <a href="https://www.npmjs.com/@metad/ocap-core">
     <img src="https://img.shields.io/npm/v/@metad/ocap-core.svg?logo=npm&logoColor=fff&label=NPM+package&color=limegreen" alt="ocap on npm" />
-  </a>&nbsp;
+  </a>
   <a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank">
     <img src="https://img.shields.io/badge/License-AGPL%20v3-blue.svg" alt="License: AGPL v3">
   </a>
@@ -34,148 +32,177 @@ English | [中文](./README_zh.md)
   </a>
 </p>
 
-**Xpert AI** is an open-source enterprise-level AI system that perfectly integrates two major platforms: agent orchestration and data analysis.
+**Xpert AI** is an open-source enterprise AI platform that seamlessly integrates agent orchestration with data analysis capabilities, empowering organizations to build intelligent workflows and derive actionable insights from their data.
 
 ## 💡 What's New
 
-**🚀 3.8 Sandbox Environment!**
+### 🚀 Version 3.8 — Agent Sandbox
 
-XpertAI 3.8 releases the Agent Sandbox feature, providing an isolated execution and file operation environment for agents. One of the core capabilities of the sandbox plugin is the provider plugin mechanism. Through custom providers, you can integrate different runtime infrastructures, such as:
+XpertAI 3.8 introduces the **Agent Sandbox** feature, providing isolated execution and file operation environments for agents. The sandbox plugin's core capability is the **Provider Plugin Mechanism**, enabling integration with various runtime infrastructures:
 
-- Docker/Podman container systems
-- [Runloop](https://runloop.ai/), [Modal](https://modal.com/), [Daytona](https://daytona.io/)
-- Remote virtual machines or secure sandbox services
+- **Container Systems**: Docker / Podman
+- **Cloud Sandboxes**: [Runloop](https://runloop.ai/), [Modal](https://modal.com/), [Daytona](https://daytona.io/)
+- **Custom Infrastructure**: Remote VMs or secure sandbox services
 
-## Agent-Workflow Hybrid Architecture
+## 🏗️ Agent-Workflow Hybrid Architecture
 
-In today’s rapidly evolving AI landscape, enterprises face a key challenge: **How to balance the creativity of LLMs with the stability of workflows**? Pure agent architectures are flexible but hard to control; traditional workflows are reliable but lack adaptability. Xpert AI’s **Agent-Workflow Hybrid Architecture** is designed to resolve this conflict, enabling AI to have “free will” while adhering to “rule-based order.”
-![agent-workflow-hybrid-architecture](https://github.com/user-attachments/assets/b3b432f9-54ab-4ec1-9fc4-7e46fbfb88ba)
+In today's rapidly evolving AI landscape, enterprises face a critical challenge: **How to balance LLM creativity with workflow stability?**
 
-[Blog - Agent-Workflow Hybrid Architecture](https://xpertai.cn/en/blog/agent-workflow-hybrid-architecture)
+- **Pure Agent Architectures**: Flexible but difficult to control
+- **Traditional Workflows**: Reliable but lack adaptability
 
-### [Agent Orchestration Platform](https://xpertai.cn/en/docs/ai/)
+Xpert AI's **Agent-Workflow Hybrid Architecture** resolves this conflict by enabling AI to exercise "free will" within "rule-based order."
 
-By coordinating the collaboration of multiple intelligent agents, Xpert can handle complex tasks. Xpert integrates different types of AI agents through efficient management mechanisms, leveraging their capabilities to address multidimensional problems.
+![Agent-Workflow Hybrid Architecture](https://github.com/user-attachments/assets/b3b432f9-54ab-4ec1-9fc4-7e46fbfb88ba)
 
-[Xpert Agent](https://github.com/user-attachments/assets/e21f8b35-2f72-4b81-a245-f36759df7c27)
+📖 [Blog: Agent-Workflow Hybrid Architecture](https://xpertai.cn/en/blog/agent-workflow-hybrid-architecture)
 
-### [Data Analysis Platform](https://xpertai.cn/en/docs/models/)
+### 🤖 [Agent Orchestration Platform](https://xpertai.cn/en/docs/ai/)
 
-A cloud-based agile data analysis platform supporting multidimensional modeling, metrics management, and BI visualization. The platform connects to various data sources, enabling efficient and flexible data analysis and visualization, and offers multiple intelligent analysis tools to help enterprises quickly and accurately uncover business value and make operational decisions.
+Coordinate multiple intelligent agents to handle complex tasks through collaborative workflows. Xpert integrates diverse AI agent types via efficient management mechanisms, leveraging their combined capabilities to solve multidimensional problems.
+
+![Xpert Agent](https://github.com/user-attachments/assets/e21f8b35-2f72-4b81-a245-f36759df7c27)
+
+### 📊 [Data Analysis Platform](https://xpertai.cn/en/docs/models/)
+
+A cloud-native agile data analysis platform featuring:
+
+- **Multidimensional Modeling** — Build sophisticated data models
+- **Metrics Management** — Define and track key performance indicators
+- **BI Visualization** — Create interactive dashboards and reports
+
+Connect to various data sources for efficient, flexible analysis and visualization, with intelligent tools to help enterprises uncover business value and make data-driven decisions.
 
 ## 🚀 Quick Start
 
-> Before installing Xpert, make sure your machine meets the following minimum system requirements:
->
-> - CPU >= 2 Core
-> - RAM >= 4 GiB
-> - Node.js (ESM and CommonJS) - 20.x, 22.x
+### Prerequisites
 
-</br>
+| Requirement | Minimum Specification |
+|-------------|----------------------|
+| CPU | 2+ Cores |
+| RAM | 4+ GiB |
+| Node.js | 20.x or 22.x (ESM & CommonJS) |
 
-The easiest way to start the Xpert server is through [docker compose](docker/docker-compose.yaml). Before running Xpert with the following commands, make sure that [Docker](https://docs.docker.com/get-docker/) and [Docker Compose](https://docs.docker.com/compose/install/) are installed on your machine:
+### Installation with Docker Compose
+
+The fastest way to get started is using [Docker Compose](docker/docker-compose.yaml). Ensure [Docker](https://docs.docker.com/get-docker/) and [Docker Compose](https://docs.docker.com/compose/install/) are installed:
 
 ```bash
-cd xpert
-cd docker
+git clone https://github.com/xpert-ai/xpert.git
+cd xpert/docker
 cp .env.example .env
 docker compose up -d
 ```
 
-After running, you can access the Xpert dashboard in your browser at [http://localhost/onboarding](http://localhost/onboarding) and start the initialization process.
+Once running, access the Xpert dashboard at [http://localhost/onboarding](http://localhost/onboarding) to begin initialization.
 
-Please check our [Wiki - Development](https://github.com/xpert-ai/xpert/wiki/Development) to get started quickly.
+📚 For development setup, see our [Wiki - Development](https://github.com/xpert-ai/xpert/wiki/Development).
 
-## 💻 Demo, Downloads, Testing and Production
+## 💻 Demo & Production
 
-### Demo
+### 🎮 Live Demo
 
-Xpert AI Platform Demo at <https://app.mtda.cloud>.
+Try Xpert AI Platform at **<https://app.mtda.cloud>**
 
-Notes:
+> 💡 You can generate sample data from the home dashboard page.
 
-- You can generate samples data in the home dashbaord page.
+### ☁️ Production (SaaS)
 
-### Production (SaaS)
+Xpert AI Platform SaaS is available at **<https://app.mtda.cloud>**
 
-Xpert AI Platform SaaS is available at <https://app.mtda.cloud>.
+> ⚠️ Currently in Alpha / testing mode — use with caution in production environments!
 
-Note: it's currently in Alpha version / in testing mode, please use it with caution!
+## 🧱 Technology Stack
 
-## 🧱 Technology Stack and Requirements
+### Core Technologies
 
-- [TypeScript](https://www.typescriptlang.org) language
-- [NodeJs](https://nodejs.org) / [NestJs](https://github.com/nestjs/nest)
-- [Nx](https://nx.dev)
-- [Angular](https://angular.dev)
-- [RxJS](http://reactivex.io/rxjs)
-- [TypeORM](https://github.com/typeorm/typeorm)
-- [Langchain](https://js.langchain.com/)
-- [ECharts](https://echarts.apache.org/)
-- [Java](https://www.java.com/)
-- [Mondrian](https://github.com/pentaho/mondrian)
+| Category | Technology |
+|----------|------------|
+| Language | [TypeScript](https://www.typescriptlang.org) |
+| Backend | [Node.js](https://nodejs.org) / [NestJS](https://github.com/nestjs/nest) |
+| Frontend | [Angular](https://angular.dev) / [RxJS](http://reactivex.io/rxjs) |
+| Build | [Nx](https://nx.dev) |
+| Database | [TypeORM](https://github.com/typeorm/typeorm) |
+| AI/LLM | [LangChain](https://js.langchain.com/) |
+| Visualization | [ECharts](https://echarts.apache.org/) |
+| OLAP | [Java](https://www.java.com/) / [Mondrian](https://github.com/pentaho/mondrian) |
 
-For Production, we recommend:
+### Recommended for Production
 
-- [PostgreSQL](https://www.postgresql.org)
-- [PM2](https://github.com/Unitech/pm2)
+- **Database**: [PostgreSQL](https://www.postgresql.org)
+- **Process Manager**: [PM2](https://github.com/Unitech/pm2)
 
 ## 🗺️ Roadmap
 
-- [ ] **SDK** – streamlines access api of the XpertAI platform.
-  - [ ] [SDK (TypeScript)](https://github.com/xpert-ai/xpert-sdk-js)
-    - [x] digital experts
-    - [x] long-term memory storage
-    - [x] contextual files
-    - [x] Conversation management
-    - [ ] knowledge bases
-  - [ ] [SDK (Python)](https://github.com/xpert-ai/xpert-sdk-py)
-- [x] **Plugins** – extensible plugin system.
-  - [x] Plugins system
-  - [x] Marketplace to showcase the plugins ecosystem.
-  - [x] Hot-swappable plugin system.
-- [ ] **Chatkit** – front-end component library for embedding digital expert chat dialog.
-  - [x] ChatKit javascript version.
-- [x] **Widgets** – UI widgets that let large-model responses drive richer interface experiences.
-- [x] **Agent Middlewares** Plugin-based Agent Middleware.
-- [x] **Agent Skills** – lightweight agent skills for rapid custom capability integration, offering a quicker alternative to MCP tools.
-- [ ] **Audit, Security, Compliance** – Enterprise-grade features to ensure data privacy and compliance.
-  - [ ] Audit logs
-  - [ ] Role-based access control
-  - [ ] Data encryption
-- [x] **Sandbox** – Secure testing environment, isolating experiments from production.
-- [ ] **Trace**, **Evaluation** – Observability and evaluation tools for agents and workflows.
-  - [ ] Trace system
-  - [ ] Evaluation framework
-- [ ] System monitoring and alerting
-  - [ ] Sentry integration
-  - [ ] Prometheus integration
+### SDK
+
+- [ ] [SDK (TypeScript)](https://github.com/xpert-ai/xpert-sdk-js)
+  - [x] Digital Experts
+  - [x] Long-term Memory Storage
+  - [x] Contextual Files
+  - [x] Conversation Management
+  - [ ] Knowledge Bases
+- [ ] [SDK (Python)](https://github.com/xpert-ai/xpert-sdk-py)
+
+### Plugins
+
+- [x] Plugin System
+- [x] Marketplace for Plugin Ecosystem
+- [x] Hot-swappable Plugins
+
+### Frontend Components
+
+- [ ] **ChatKit** — Frontend component library for embedding expert chat dialogs
+  - [x] JavaScript Version
+- [x] **Widgets** — UI widgets for richer LLM response experiences
+
+### Agent Capabilities
+
+- [x] **Agent Middlewares** — Plugin-based middleware system
+- [x] **Agent Skills** — Lightweight skills for rapid capability integration
+- [x] **Sandbox** — Secure isolated execution environment
+
+### Enterprise Features
+
+- [ ] **Audit, Security, Compliance**
+  - [ ] Audit Logs
+  - [ ] Role-based Access Control
+  - [ ] Data Encryption
+
+### Observability
+
+- [ ] **Trace & Evaluation** — Tools for agent/workflow observability
+  - [ ] Trace System
+  - [ ] Evaluation Framework
+- [ ] **Monitoring & Alerting**
+  - [ ] Sentry Integration
+  - [ ] Prometheus Integration
 
 ## 💌 Contact Us
 
-- For business inquiries: <mailto:service@xpertai.cn>
-- [Xpert AI Platform @ Twitter](https://x.com/xpertai_cloud)
+- **Business Inquiries**: <mailto:service@xpertai.cn>
+- **Twitter**: [@xpertai_cloud](https://x.com/xpertai_cloud)
 
 ## 🛡️ License
 
-We support the open-source community.
+We support the open-source community. This software is available under multiple licenses:
 
-This software is available under the following licenses:
+| Edition | License |
+|---------|--------|
+| Community Edition | [AGPL v3](https://github.com/xpert-ai/xpert/blob/main/LICENSES.md#xpert-ai-platform-community-edition-license) |
+| Enterprise Edition | [Commercial License](https://github.com/xpert-ai/xpert/blob/main/LICENSES.md#xpert-ai-platform-small-business-license) |
+| Enterprise Pro Edition | [Commercial License](https://github.com/xpert-ai/xpert/blob/main/LICENSES.md#xpert-ai-platform-enterprise-license) |
 
-- [Xpert AI Platform Community Edition](https://github.com/xpert-ai/xpert/blob/main/LICENSES.md#xpert-ai-platform-community-edition-license)
-- [Xpert AI Platform Enterprise Edition](https://github.com/xpert-ai/xpert/blob/main/LICENSES.md#xpert-ai-platform-small-business-license)
-- [Xpert AI Platform Enterprise Pro Edition](https://github.com/xpert-ai/xpert/blob/main/LICENSES.md#xpert-ai-platform-enterprise-license)
+📄 See [LICENSES.md](LICENSES.md) for detailed licensing information.
 
-#### Please see [LICENSE](LICENSES.md) for more information on licenses.
-
-## 💪 Thanks to our Contributors
-
-**Contributors**
+## 💪 Contributors
 
 <a href="https://github.com/xpert-ai/xpert/graphs/contributors">
-  <img src="https://contributors-img.web.app/image?repo=xpert-ai/xpert" />
+  <img src="https://contributors-img.web.app/image?repo=xpert-ai/xpert" alt="Contributors" />
 </a>
 
-- Please give us :star: on Github, it **helps**!
-- You are more than welcome to submit feature requests in the [Xpert AI repo](https://github.com/xpert-ai/xpert/issues)
-- Pull requests are always welcome! Please base pull requests against the _develop_ branch and follow the [contributing guide](.github/CONTRIBUTING.md).
+### How to Support
+
+- ⭐ **Star us on GitHub** — It helps the project grow!
+- 🐛 **Report Issues** — Submit feature requests or bug reports in [Issues](https://github.com/xpert-ai/xpert/issues)
+- 🔧 **Contribute Code** — Pull requests are welcome! Please base PRs against the `develop` branch and follow our [Contributing Guide](.github/CONTRIBUTING.md).
